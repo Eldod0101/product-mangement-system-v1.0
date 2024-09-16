@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222;
+    color: azure;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.cruds {
+    width: 80%;
+    margin: auto;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #111;
+    color: azure;
+    text-transform: capitalize;
+}
+
+input:focus {
+    background-color: black;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.price input {
+    width: 15%;
+}
+
+.price small {
+    background-color: #8c1e0f;
+    margin-left: 3%;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.price small::before {
+    content: 'total :';
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #8c1e0f;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    letter-spacing: 3px;
+    background-color: #8f3225;
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+#delete:hover,
+#update:hover {
+    letter-spacing: 1px;
+    background-color: #8f3225;
+    transform: none;
+    transition: none;
+}
+
+.btnSearchOptions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px;
+}
+
+.btnSearchOptions button {
+    width: 45%;
+}
+
+table {
+    width: 100%;
+}
+
+table thead {
+    background-color: #8c1e0f;
+    color: #ffffff;
+}
+
+table thead th {
+    padding: 10px;
+}
+
+table tbody td {
+    padding: 10px;
+    text-align: center;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #111;
+}
+
+#deleteAll {
+    margin-bottom: 10px;
+}
